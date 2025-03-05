@@ -25,10 +25,19 @@ SECRET_KEY = "django-insecure-+3b8x#%x!9dkmmr4^@6n@+im1bs=gu-ks*sy6#^87o$sx5-war
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['harars.onrender.com', '127.0.0.1', 'localhost']
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Allow frontend to access API
-    # "https://carparkingsystem.vercel.app",  
+   'http://localhost:5173',
+   'https://hararhospital.vercel.app',
+   'https://harars.onrender.com',
+]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'x-csrftoken',
+    'accept',
 ]
 
 
